@@ -17,18 +17,29 @@
 
   <body>
     
-    <header>
+    <!-- header -->
+    <header class="green">
 
-      <nav>
-        <div class="logo">
-          <p>Start Bootstrap</p>
+      <div class="dm-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 logo">
+              <p>Start Bootstrap</p>
+            </div>
+            <div class="col-xs-6 text-right">
+              <nav class="hidden-xs">
+                <ul>
+                  <li>Portfolio</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+              </nav>
+              <!-- hamburger menu -->
+              <div class="visible-xs">Bottone</div>
+            </div>
+          </div>
         </div>
-        <ul>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+      </div>
 
       <section id="slider" class="container">
         <div class="row">
@@ -42,13 +53,20 @@
       <!-- /slider -->
 
     </header>
+    <!-- /header -->
 
+    <!-- main -->
     <main>
 
 
       <section id="portfolio" class="container">
 
-        <h3>Portfolio</h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Portfolio</h3>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-lg-4">
             <img src="assets/img/cabin.png" alt="Cabin">
@@ -74,49 +92,80 @@
       </section>
       <!-- /portfolio -->
 
-      <section id="about" class="container">
+      <section id="about" class="green dm-padding-80">
 
-        <h3>About</h3>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ipsum maxime, in ad pariatur doloribus dolore perspiciatis quas aliquam fugiat!</div>
-          <div class="col-xs-12 col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ipsum maxime, in ad pariatur doloribus dolore perspiciatis quas aliquam fugiat!</div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>About</h3>
+            </div>
+          </div>
         </div>
-        <button>Download</button>
+
+        <div class="dm-wrapper-60">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-md-6 text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ipsum maxime, in ad pariatur doloribus dolore perspiciatis quas aliquam fugiat!</div>
+              <div class="col-xs-12 col-md-6 text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ipsum maxime, in ad pariatur doloribus dolore perspiciatis quas aliquam fugiat!</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <button>Download</button>
+            </div>
+          </div>
+        </div>
 
       </section>
       <!-- /about -->
 
-      <section id="contact" class="container">
-        <h3>Contact Me</h3>
-        <div class="col-xs-12 text-center">
-          <form action="#">
-            <input type="text" label="Name" placeholder="Name">
-            <input type="email" label="E-mail" placeholder="E-mail">
-            <input type="number" label="Phone Number" placeholder="Phone Number">
-            <input type="text" label="Message" placeholder="Message">
-            <button class="btn">Send</button>
-          </form>
+      <section id="contact" class="dm-padding-80">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Contact Me</h3>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <form action="#">
+                <input type="text" label="Name" placeholder="Name">
+                <input type="email" label="E-mail" placeholder="E-mail">
+                <input type="number" label="Phone Number" placeholder="Phone Number">
+                <input type="text" label="Message" placeholder="Message">
+                <button class="btn">Send</button>
+              </form>
+            </div>
+          </div>
         </div>
+
       </section>
       <!-- /contact -->
 
     </main>
+    <!-- /main -->
 
+    <!-- footer -->
     <footer>
       <div class="container">
-        <div class="row">
+
+        <div class="row dm-padding-80 ">
           <div class="col-xs-12 col-md-4">Location</div>
           <div class="col-xs-12 col-md-4">Location</div>
           <div class="col-xs-12 col-md-4">Location</div>
         </div>
 
-        <div class="row">
-          <div class="col-xs-12">
+        <div class="row dm-padding-20">
+          <div class="col-xs-12 text-center">
             Copyright 
           </div>
         </div>
+
       </div>
     </footer>
+    <!-- /footer -->
 
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
