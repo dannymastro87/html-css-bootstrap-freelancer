@@ -79,6 +79,7 @@ h4 {
   background-color: transparent;
   color: #ffffff;
   margin-top: 50px;
+  margin-bottom: 30px;
   font-size: 1em;
 }
 
@@ -90,17 +91,61 @@ h4 {
 }
 
 .fas.fa-star {
+  padding: 10px;
   position: relative;
+  z-index: 1;
 }
 
-.fas.fa-star:after{
-  content:'';
+.line {
+  position: relative;
+  width: 260px;
+  margin: 10px auto;
+}
+
+.line:after {
+  content: '';
+  width: 45%;
+  border-bottom: solid 2px #fff;
   position: absolute;
-  width: 120px;
-  height: 2px;
-  line-height: 2px;
-  margin: 10px 5px;
-  background-color: #ffffff;
+  left: 0;
+  top: 50%;
+  margin-left: -10px;
+}
+
+.line:before {
+  content: '';
+  width: 45%;
+  border-bottom: solid 2px #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-right: -10px;
+}
+
+.line-black {
+  position: relative;
+  width: 260px;
+  margin: 10px auto;
+}
+
+.line-black:after {
+  content: '';
+  width: 45%;
+  border-bottom: solid 2px #000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-left: -10px;
+}
+
+.line-black:before {
+  content: '';
+  width: 45%;
+  border-bottom: solid 2px #000;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-right: -10px;
 }
 
 nav li {
@@ -120,6 +165,7 @@ nav li:hover {
 
 #slider img {
   height: 400px;
+  width: 100%;
 }
 
 #about h3{
@@ -128,8 +174,8 @@ nav li:hover {
 
 #portfolio img {
   width: 100%;
+  margin: 10px 0;
   border-radius: 10px;
-  margin: 10px;
 }
 
 .social{
