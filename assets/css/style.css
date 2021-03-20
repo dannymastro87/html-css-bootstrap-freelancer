@@ -35,8 +35,9 @@ footer {
   padding: 40px 0;
 }
 
-ul {
+footer ul {
   display: inline-block;
+  margin-left: -40px;
 }
 
 li {
@@ -48,7 +49,8 @@ a {
   color: #ffffff;
 }
 
-a:hover {
+a:hover, a:active, a:focus {
+  text-decoration: none;
   color: #000000;
 }
 
@@ -99,8 +101,14 @@ h4 {
   font-weight: 500;
 }
 
+.border {
+  border: 1px solid #ffffff;
+  padding: 5px;
+}
+
 .fas.fa-star {
-  padding: 10px;
+  padding: 10px 0;
+  font-size: 1.5em;
   position: relative;
   z-index: 1;
 }
@@ -114,7 +122,9 @@ h4 {
 .line:after {
   content: '';
   width: 45%;
-  border-bottom: solid 2px #fff;
+  height: 3px;
+  background-color: #ffffff;
+  vertical-align: middle;
   position: absolute;
   left: 0;
   top: 50%;
@@ -124,7 +134,9 @@ h4 {
 .line:before {
   content: '';
   width: 45%;
-  border-bottom: solid 2px #fff;
+  height: 3px;
+  background-color: #ffffff;
+  vertical-align: middle;
   position: absolute;
   right: 0;
   top: 50%;
@@ -140,7 +152,9 @@ h4 {
 .line-black:after {
   content: '';
   width: 45%;
-  border-bottom: solid 2px #000;
+  height: 3px;
+  background-color: #000000;
+  vertical-align: middle;
   position: absolute;
   left: 0;
   top: 50%;
@@ -150,7 +164,9 @@ h4 {
 .line-black:before {
   content: '';
   width: 45%;
-  border-bottom: solid 2px #000;
+  height: 3px;
+  background-color: #000000;
+  vertical-align: middle;
   position: absolute;
   right: 0;
   top: 50%;
@@ -191,11 +207,10 @@ nav li:hover {
   display: inline;
   border: 1px solid #ffffff;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
   padding: 12px;
   line-height: 50px;
   margin: 5px;
+  font-size: 18px;
 }
 
 form {
@@ -205,7 +220,7 @@ form {
 
 input[type=text], input[type=email], input[type=number], textarea {
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 10px;
   text-align: left;
   box-sizing: border-box;
   border: none;
